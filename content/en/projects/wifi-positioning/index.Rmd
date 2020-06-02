@@ -1,0 +1,8 @@
+---
+title: "Wifi Indoor Positioning" # Title of your project
+weight: 0 # Order in which to show this project on the home page
+external_link: "" # Optional external link instead of modal
+resources:
+    - src: wifi.jpg
+draft: true
+---
