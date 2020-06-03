@@ -11,32 +11,22 @@
     
     
     <item>
-      <title>Photography</title>
-      <link>/projects/photography/</link>
+      <title>Smart submetter for smart homes</title>
+      <link>/projects/submetter-smart-homes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/photography/</guid>
-      <description>Sometimes I take pictures This project is about the pictures I take. Sometimes, they are pictures of cats.</description>
+      <guid>/projects/submetter-smart-homes/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Design</title>
-      <link>/projects/design/</link>
+      <title>Wifi Indoor Positioning</title>
+      <link>/projects/wifi-positioning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/design/</guid>
-      <description>This theme was designed by Victoria Drake. Go on, explore! 💪
-If you want to use it for your website, check out the section at the bottom of the main page. 👍</description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>/projects/writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/writing/</guid>
-      <description>Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong.
-To go viennese cream to go, flavour, so mocha as, carajillo iced et a siphon froth. Aged, eu, cup, brewed aroma kopi-luwak, coffee, id viennese french press brewed grounds acerbic froth. Decaffeinated acerbic, spoon beans seasonal, french press café au lait mazagran roast chicory, pumpkin spice galão as fair trade, dark irish cup ristretto half and half whipped shop.</description>
+      <guid>/projects/wifi-positioning/</guid>
+      <description>OVERVIEW
+Many real-world applications need to know the localization of a user in the world to provide their services. Therefore, automatic user localization has been a hot research topic in the last years. Automatic user localization consists of estimating the position of the user (latitude, longitude, and altitude) by using an electronic device, usually a mobile phone. Outdoor localization problem can be solved very accurately thanks to the inclusion of GPS sensors into the mobile devices.</description>
     </item>
     
     <item>
@@ -58,29 +48,11 @@ To go viennese cream to go, flavour, so mocha as, carajillo iced et a siphon fro
     </item>
     
     <item>
-      <title>Smart submetter for smart homes</title>
-      <link>/projects/submetter-smart-homes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/submetter-smart-homes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Who eats the food we grow?</title>
       <link>/projects/world-food/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/world-food/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wifi Indoor Positioning</title>
-      <link>/projects/wifi-positioning/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/wifi-positioning/</guid>
       <description></description>
     </item>
     

@@ -59,6 +59,7 @@
             </header>
             {{ end }}
 
+            <section class="modal-card-body markdown">
             {{ with .Resources.ByType "image" }}
             {{ $moreThenOneImage := gt (len .) 1 }}
             {{ if $moreThenOneImage }}
@@ -80,7 +81,6 @@
             {{ end }}
 
             {{ with .Content }}
-            <section class="modal-card-body markdown">
                 {{ . }}
             </section>
             {{ end }}
