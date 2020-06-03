@@ -21,20 +21,18 @@ pacman::p_load(tidyverse, gridExtra, grid, ggrepel)
 data <- read_csv("~/Downloads/survey_results_public.csv")
 ```
 
-# Report purpose
+OVERVIEW
 
-The goal of this report is to analyise the stack overflow survey made in 2018, here is the [link](https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey) to the data. We will put the focus on developers working as data analysts and data scientists. The main questions to answer would be:
+The goal of this report is to analyse the stack overflow survey made in 2018, here is the [link](https://www.kaggle.com/stackoverflow/stack-overflow-2018-developer-survey) to the data. We will put the focus on developers working as data analysts and data scientists. The main questions to answer would be:
   
 1. How much do they earn? We will only analyse the ones living in European countries like Germany, Spain or France. 
-2. Which are the technologies they use? Detect the used and desired languages, databases and frameworks. 
+2. Which are the technologies they use? Detect the used and desired languages, databases, and frameworks. 
 
-First of all, we will define the profile we are interested on:
+First of all, we will define the profile we are interested in:
   
 * Not a student and not coding as a hobby
 * Age between "25 - 34 years old" or "35 - 44 years old"
-* Type of developer: Data or business analyst, Data scientist or machine learning specialist, Marketing or sales professional.
-
-# General analysis
+* Type of developer: Data or business analyst, data scientist or machine learning specialist, Marketing or sales professional.
 
 ```{r filtering the data}
 # define the interesting developer types
@@ -57,9 +55,10 @@ analyst_df <- data %>%
   distinct(Respondent, .keep_all = T) 
 ```
 
-After filtering our the data, we have `r nrow(analyst_df)` respondents, in relation to the `r nrow(data)` in the original data. 
+After filtering our data, we have `r nrow(analyst_df)` respondents, in relation to the `r nrow(data)` in the original data. 
 
-## European salaries
+\
+EUROPEAN SALARIES
 
 Now, let's find out which is the country where you can earn more money:
   
@@ -82,12 +81,16 @@ euro_analysis %>%
   labs(title = "Salary analysis by European countries",
        caption = "Stack Overflow Survay 2018") +
   xlab(label = "") + ylab("Salary in $") +
-  theme_minimal()
+  theme_minimal() + 
+  theme(
+    text = element_text(size = 13)
+  )
 ```
 
-# Actual and future technologies 
+\
+ACTUAL VS. FUTURE TECHNOLOGIES
 
-## Operating system 
+Operating systems
 
 ```{r}
 analyst_df %>% 
@@ -102,10 +105,13 @@ analyst_df %>%
        caption = "Stack Overflow Survey 2018") +
   ylab(label = "Median salary") +
   xlab(label = "Operating system") + 
-  theme_minimal()
+  theme_minimal() + 
+  theme(
+    text = element_text(size = 13)
+  )
 ```
 
-## Communication tools 
+Communication Tools
 
 ```{r fig.width=8}
 analyst_df %>% 
@@ -123,11 +129,13 @@ analyst_df %>%
   coord_flip() +
   theme_minimal() +
   theme(
+    text = element_text(size = 13),
     axis.title = element_blank()
   )
 ```
 
-## Language analysis
+\
+Language analysis
 
 ```{r fig.height=4, fig.height=7}
 # Most used programming language for data analysist and scientist
@@ -171,12 +179,14 @@ used_lang_plot %>%
        caption = "Stack Overflow survay 2018") +
   theme_minimal() +
   theme(
+    text = element_text(size = 13),
     legend.position = "none",
     axis.line.x = element_blank()
   ) 
 ```
 
-## Framework analysis
+\
+Framework analysis
 
 ```{r fig.height=4, fig.height=7}
 # Most used programming language for data analysist and scientist
@@ -219,12 +229,14 @@ used_frame %>%
        caption = "Stack Overflow survay 2018") +
   theme_minimal() +
   theme(
+    text = element_text(size = 13),
     legend.position = "none", 
     axis.line.x = element_blank()
   ) 
 ```
 
-## Database technologies
+\
+Database technologies
 
 ```{r fig.height=4, fig.height=7}
 # Most used programming language for data analysist and scientist
@@ -269,6 +281,7 @@ used_database %>%
        caption = "Stack Overflow survay 2018") +
   theme_minimal() +
   theme(
+    text = element_text(size = 13),
     legend.position = "none", 
     axis.line.x = element_blank()
   ) 

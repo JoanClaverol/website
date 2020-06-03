@@ -6,20 +6,21 @@
     <description>Recent content on Introduction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2020 20:58:32 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 17:34:14 +0200</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>AirBnb New York</title>
+      <title>Airbnb New York</title>
       <link>/blog/airbnb-newyork/</link>
       <pubDate>Sun, 31 May 2020 20:58:32 +0200</pubDate>
       
       <guid>/blog/airbnb-newyork/</guid>
-      <description>Description of the problem […]
- Analysis Probably they will be placed on the most expensive area of new York. To detect that we will create a heat map:
-The hypothesis seems to be correct. I can bet if we look for the places with a higher price, we will see a nice relation to this part of New York. To be able to compare the prices between different zones, we will differentiate the room types by colours:</description>
+      <description>OVERVIEW
+The main goal is to understand though visualizations how the prices for Airbnb in New York are distributed. To achieve that, we will use a kaggle dataset provided by Airbnb. First, we will look at the whole city, and then we will analyze each neighborhood.
+The following map shows us the price distribution in the city of New York.
+There is a big amount of options with high prices in the area of Manhattan.</description>
     </item>
     
     <item>
@@ -60,12 +61,23 @@ Many real-world applications need to know the localization of a user in the worl
     </item>
     
     <item>
+      <title>2020 06 03 Tidytuesday Marble Racing</title>
+      <link>/blog/tidytuesday-marble-racing/tidytuesday-marble-racing/</link>
+      <pubDate>Wed, 03 Jun 2020 17:34:14 +0200</pubDate>
+      
+      <guid>/blog/tidytuesday-marble-racing/tidytuesday-marble-racing/</guid>
+      <description>The following description comes from the TidyTuesday github.
+ Jelle’s Marble Runs started as a quirky YouTube channel back in 2006 and has refined the art of marble racing to the point that many — including sponsor John Oliver from Last Week Tonight — consider marble racing a legitimate contender for the national sports spotlight. Given that Jelle’s Marble Runs just completed their popular Marbula One competition last month, I was curious to look at the race results to see if these races were anything more than chaos.</description>
+    </item>
+    
+    <item>
       <title>Stack overflow 2018 survey analysis</title>
       <link>/blog/stackoverflow-survay-2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/blog/stackoverflow-survay-2018/</guid>
-      <description>Report purpose The goal of this report is to analyise the stack overflow survey made in 2018, here is the link to the data. We will put the focus on developers working as data analysts and data scientists. The main questions to answer would be:
+      <description>OVERVIEW
+The goal of this report is to analyse the stack overflow survey made in 2018, here is the link to the data. We will put the focus on developers working as data analysts and data scientists. The main questions to answer would be:
 How much do they earn? We will only analyse the ones living in European countries like Germany, Spain or France. Which are the technologies they use?</description>
     </item>
     

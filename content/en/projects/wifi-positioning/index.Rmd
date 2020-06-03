@@ -32,7 +32,7 @@ TECHNOLOGIES:
 \
 RESULTS
 
-This challenge is divided into two types of machine learning problems; classification & regression. 
+This challenge is divided into two types of machine learning problems; 
 
 + Classification: 
     - Building:  100% Accuracy, 1.00 Kappa

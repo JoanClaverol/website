@@ -1,5 +1,5 @@
 ---
-title: "AirBnb New York"
+title: "Airbnb New York"
 author: "Joan Claverol"
 date: 2020-05-31T20:58:32+02:00
 draft: true
@@ -17,12 +17,9 @@ knitr::opts_chunk$set(
   )
 ```
 
-## Description of the problem
+OVERVIEW
 
-[...]
-
-
-## Analysis
+The main goal is to understand though visualizations how the prices for Airbnb in New York are distributed. To achieve that, we will use a [kaggle dataset provided by Airbnb](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data). First, we will look at the whole city, and then we will analyze each neighborhood. 
 
 ```{r libraries and data loading}
 # libraries
@@ -42,15 +39,11 @@ data <- read_csv(
 col <- "dodgerblue4"
 # caption used for all the charts 
 caption <- "Airbnb listings and metrics in NYC, NY, USA (2019)"
-```
 
-```{r}
 data %<>% 
   select(-last_review, - reviews_per_month) %>% 
   mutate_at(vars(name, host_name), ~if_else(is.na(.), "unknown", .))
-```
 
-```{r out.width="800px", out.height="520px"}
 treshold_listing_id <- 50
 top_listingIDs <- data %>% 
   group_by(host_id) %>% 
@@ -58,7 +51,7 @@ top_listingIDs <- data %>%
   filter(n > treshold_listing_id)
 ```
 
-Probably they will be placed on the most expensive area of new York. To detect that we will create a heat map:
+The following map shows us the price distribution in the city of New York.
 
 ```{r out.width="800px", out.height="520px"}
 # define outlier threshold
@@ -80,7 +73,9 @@ data %>%
     ) 
 ```
 
-The hypothesis seems to be correct. I can bet if we look for the places with a higher price, we will see a nice relation to this part of New York. To be able to compare the prices between different zones, we will differentiate the room types by colours:
+There is a big amount of options with high prices in the area of Manhattan. 
+
+Let's go in deep about the number of observations and the median price for each neighbourhood: 
 
 ```{r}
 # plot creation
@@ -111,7 +106,9 @@ data %>%
     )
 ```
 
-In that graph we are missing more information about the distribution of the data based on room type and neighbourhood group. We will use violins plots to see it:
+The previous graph is relevant to detect where we have our main observations. 
+
+To understand more in deep how is the distribution for each neighborhood, we can use violin plots: 
 
 ```{r}
 data %>% 

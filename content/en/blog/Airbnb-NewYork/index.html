@@ -1,5 +1,5 @@
 ---
-title: "AirBnb New York"
+title: "Airbnb New York"
 author: "Joan Claverol"
 date: 2020-05-31T20:58:32+02:00
 draft: true
@@ -13,16 +13,13 @@ output:
 
 
 
-<div id="description-of-the-problem" class="section level2">
-<h2>Description of the problem</h2>
-<p>[…]</p>
-</div>
-<div id="analysis" class="section level2">
-<h2>Analysis</h2>
-<p>Probably they will be placed on the most expensive area of new York. To detect that we will create a heat map:</p>
-<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-3-1.svg" width="800px" height="520px" /></p>
-<p>The hypothesis seems to be correct. I can bet if we look for the places with a higher price, we will see a nice relation to this part of New York. To be able to compare the prices between different zones, we will differentiate the room types by colours:</p>
-<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-4-1.svg" width="768" /></p>
-<p>In that graph we are missing more information about the distribution of the data based on room type and neighbourhood group. We will use violins plots to see it:</p>
-<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-5-1.svg" width="768" /></p>
-</div>
+<p>OVERVIEW</p>
+<p>The main goal is to understand though visualizations how the prices for Airbnb in New York are distributed. To achieve that, we will use a <a href="https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data">kaggle dataset provided by Airbnb</a>. First, we will look at the whole city, and then we will analyze each neighborhood.</p>
+<p>The following map shows us the price distribution in the city of New York.</p>
+<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-1-1.svg" width="800px" height="520px" /></p>
+<p>There is a big amount of options with high prices in the area of Manhattan.</p>
+<p>Let’s go in deep about the number of observations and the median price for each neighbourhood:</p>
+<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-2-1.svg" width="768" /></p>
+<p>The previous graph is relevant to detect where we have our main observations.</p>
+<p>To understand more in deep how is the distribution for each neighborhood, we can use violin plots:</p>
+<p><img src="/en/blog/Airbnb-NewYork/index_files/figure-html/unnamed-chunk-3-1.svg" width="768" /></p>
