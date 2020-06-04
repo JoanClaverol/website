@@ -1,0 +1,48 @@
+---
+title: "Individual household electric power consumption" # Title of your project
+weight: 1 # Order in which to show this project on the home page
+external_link: "" # Optional external link instead of modal
+resources:
+    - src: energy.jpg
+draft: true
+---
+OVERVIEW
+
+Have you ever considered if it is worth it to install smart submeters at your place? And, in case you did it, how are you going to use them to help you with reducing the energy expenses and decrease the costs? 
+
+The main goal of this project is to detect which are the main advantages of submeters through data. I am going to focus on: 
+
+* Energy forecasting of the total house
+* Appliance analysis
+* Anomalies detection
+
+Everything will be summarised in a dashboard where the final user will be able to track every aspect of the home. 
+
+\
+DATASET
+
+The datasets I am going to use will be [Individual household electric power consumption](https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption) from UCI Machine Learning Repository. 
+
+> *Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and some sub-metering values are available. [...] This archive contains 2075259 measurements gathered in a house located in Sceaux (7km of Paris, France) between December 2006 and November 2010 (47 months).* 
+
+\
+TECHNOLOGIES
+
+**R** as a programming language. Libraries used: 
+
+* *Data manipulation*: Tidyverse and Lubridate 
+* *Visualizations*: Tidyverse and Shiny
+* *Machine Learning*: Forecast and Prophet
+
+*RStudio* as IDE
+
+\
+CONCLUSION
+
+Energy consumption can be forecasted quite well, thanks to his high seasonality and a stable trend. But there has to be a good track of the appliances on the home, and check if there is an installation of a new one. 
+
+Appliance detection can be done, but there is a need for labeling better the data while you are collecting, as there are appliances that have similar energy patterns. To increase the accuracy there can be installed new submeters in more areas of the home, to be sure you are collecting individual patterns. 
+
+Anomalies detection can also be done, in order to help the user to find better time frames to use the appliances. Shiny is a great tool to communicate that information.
+
+[Link](https://github.com/JoanClaverol/ubiqum_energyConsumption) to the Github project.

@@ -7,8 +7,6 @@ resources:
 draft: true
 ---
 
-
-
 OVERVIEW
 
 *Many real-world applications need to know the localization of a user in the world to provide their services. Therefore, automatic user localization has been a hot research topic in the last years. Automatic user localization consists of estimating the position of the user (latitude, longitude, and altitude) by using an electronic device, usually a mobile phone. Outdoor localization problem can be solved very accurately thanks to the inclusion of GPS sensors into the mobile devices. However, indoor localization is still an open problem mainly due to the loss of GPS signals in indoor environments. Although there are some indoor positioning technologies and methodologies, this database is focused on WLAN fingerprint-based ones (also known as WiFi Fingerprinting).* Source [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc)
@@ -27,7 +25,7 @@ TECHNOLOGIES:
 * *Visualizations*: Matplotlib, Seaborn, and Plotly
 * *Machine learning*: Scikit-Learn
 
-*JupyterLab* has been used as IDE. 
+*JupyterLab* as IDE. 
 
 \
 RESULTS

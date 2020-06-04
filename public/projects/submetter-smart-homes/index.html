@@ -10,12 +10,12 @@
 <meta name="referrer" content="no-referrer">
 <meta name="description" content="Website Description">
 <title>
-Smart submetter for smart homes - Introduction
+Individual household electric power consumption - Introduction
 </title>
 
 
 
-        <meta property="og:title" content="Smart submetter for smart homes - Introduction" />
+        <meta property="og:title" content="Individual household electric power consumption - Introduction" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Website Description"/>
 <meta property="og:url" content="/projects/submetter-smart-homes/"/>
@@ -37,7 +37,7 @@ Smart submetter for smart homes - Introduction
 
 
 
-<link rel="stylesheet" href="/css/main.min.453d16a5e3809482823925886dfeda154d8f7d29a0115864e32b93ef496c9b97.css" integrity="sha256-RT0WpeOAlIKCOSWIbf7aFU2PfSmgEVhk4yuT70lsm5c=" crossorigin="anonymous" media="screen">
+<link rel="stylesheet" href="/css/main.min.c6180d27f1989feeff09d215661a8844011d3ac2b8908cb8e893a40fe1cb1365.css" integrity="sha256-xhgNJ/GYn&#43;7/CdIVZhqIRAEdOsK4kIy46JOkD&#43;HLE2U=" crossorigin="anonymous" media="screen">
 
 
 
@@ -58,7 +58,7 @@ Smart submetter for smart homes - Introduction
             
             <div class="container hero  fade-in one ">
                 
-                <h1 class="bold-title is-1">Smart submetter for smart homes</h1>
+                <h1 class="bold-title is-1">Individual household electric power consumption</h1>
                 
             </div>
             
@@ -168,6 +168,39 @@ Smart submetter for smart homes - Introduction
         </div>
         
         
+
+
+<p>OVERVIEW</p>
+<p>Have you ever considered if it is worth it to install smart submeters at your place? And, in case you did it, how are you going to use them to help you with reducing the energy expenses and decrease the costs?</p>
+<p>The main goal of this project is to detect which are the main advantages of submeters through data. I am going to focus on:</p>
+<ul>
+<li>Energy forecasting of the total house</li>
+<li>Appliance analysis</li>
+<li>Anomalies detection</li>
+</ul>
+<p>Everything will be summarised in a dashboard where the final user will be able to track every aspect of the home.</p>
+<p><br />
+DATASET</p>
+<p>The datasets I am going to use will be <a href="https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">Individual household electric power consumption</a> from UCI Machine Learning Repository.</p>
+<blockquote>
+<p><em>Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years. Different electrical quantities and some sub-metering values are available. […] This archive contains 2075259 measurements gathered in a house located in Sceaux (7km of Paris, France) between December 2006 and November 2010 (47 months).</em></p>
+</blockquote>
+<p><br />
+TECHNOLOGIES</p>
+<p><strong>R</strong> as a programming language. Libraries used:</p>
+<ul>
+<li><em>Data manipulation</em>: Tidyverse and Lubridate</li>
+<li><em>Visualizations</em>: Tidyverse and Shiny</li>
+<li><em>Machine Learning</em>: Forecast and Prophet</li>
+</ul>
+<p><em>RStudio</em> as IDE</p>
+<p><br />
+CONCLUSION</p>
+<p>Energy consumption can be forecasted quite well, thanks to his high seasonality and a stable trend. But there has to be a good track of the appliances on the home, and check if there is an installation of a new one.</p>
+<p>Appliance detection can be done, but there is a need for labeling better the data while you are collecting, as there are appliances that have similar energy patterns. To increase the accuracy there can be installed new submeters in more areas of the home, to be sure you are collecting individual patterns.</p>
+<p>Anomalies detection can also be done, in order to help the user to find better time frames to use the appliances. Shiny is a great tool to communicate that information.</p>
+<p><a href="https://github.com/JoanClaverol/ubiqum_energyConsumption">Link</a> to the Github project.</p>
+
     </div>
     
     

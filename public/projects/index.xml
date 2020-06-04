@@ -11,12 +11,15 @@
     
     
     <item>
-      <title>Smart submetter for smart homes</title>
+      <title>Individual household electric power consumption</title>
       <link>/projects/submetter-smart-homes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/submetter-smart-homes/</guid>
-      <description></description>
+      <description>OVERVIEW
+Have you ever considered if it is worth it to install smart submeters at your place? And, in case you did it, how are you going to use them to help you with reducing the energy expenses and decrease the costs?
+The main goal of this project is to detect which are the main advantages of submeters through data. I am going to focus on:
+ Energy forecasting of the total house Appliance analysis Anomalies detection  Everything will be summarised in a dashboard where the final user will be able to track every aspect of the home.</description>
     </item>
     
     <item>
