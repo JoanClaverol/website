@@ -9,21 +9,23 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
-<meta name="description" content="Website Description">
+<meta name="description" content="Website about data projects done by Joan Claverol">
 <title>
-Introduction
+Joan Claverol - Data Analyst
 </title>
 
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Introduction" />
+<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Joan Claverol - Data Analyst" />
 
-        <meta property="og:title" content="Introduction" />
+        <meta property="og:title" content="Joan Claverol - Data Analyst" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="Website Description"/>
+<meta property="og:description" content="Website about data projects done by Joan Claverol"/>
 <meta property="og:url" content="/"/>
-<meta property="og:site_name" content="Introduction"/>
+<meta property="og:site_name" content="Joan Claverol - Data Analyst"/>
 
 
 
+
+<meta property="og:image" content="/home/home.jpg"/>
 
 
 
@@ -419,7 +421,7 @@ CONCLUSION</p>
 DATASET</p>
 <p><em>The UJIIndoorLoc database covers three buildings of Universitat Jaume I with 4 or more floors and almost 110.000m2. It can be used for classification, e.g. actual building and floor identification, or regression, e.g. actual longitude and latitude estimation. It was created in 2013 by means of more than 20 different users and 25 Android devices. The database consists of 19937 training/reference records (trainingData.csv file) and 1111 validation/test records (validationData.csv file).</em> Source <a href="https://archive.ics.uci.edu/ml/datasets/UJIIndoorLoc">UCI Machine Learning Repository</a></p>
 <p><br />
-TECHNOLOGIES:</p>
+TECHNOLOGIES</p>
 <p><strong>Python</strong> as a programming language. Libraries used:</p>
 <ul>
 <li><em>Data manipulation</em>: Pandas and Numpy</li>
@@ -486,7 +488,39 @@ CONCLUSION</p>
                 
 
 
-
+<p>OVERVIEW</p>
+<p>Is it possible to predict the number of starts a user will give to a product based on the content of his review? Am I able to find different customer behaviours based on different products?</p>
+<p>To be able to answer these questions will give me a better perspective of how customer client departments work on E-Commerce companies and do text mining to extract insights from it.</p>
+<p><br />
+DATASET</p>
+<p>I am going to use the data set <a href="https://www.kaggle.com/grikomsn/amazon-cell-phones-reviews">Amazone Cell Phone Reviews</a> from Kaggle website.</p>
+<blockquote>
+<p><em>[…] this dataset focuses on both unlocked and locked carriers, and scoped on ten brands: ASUS, Apple, Google, HUAWEI, Motorola, Nokia, OnePlus, Samsung, Sony, and Xiaomi.</em></p>
+</blockquote>
+<p><br />
+TECHNOLOGIES</p>
+<p><strong>R</strong> as a programming language. Libraries used:</p>
+<ul>
+<li><em>Data manipulation</em>: Tidyverse and tm(text mining)</li>
+<li><em>Visualizations</em>: ggplot2</li>
+<li><em>Machine Learning</em>: caret</li>
+</ul>
+<p><em>RStudio</em> as IDE</p>
+<p><br />
+RESULTS</p>
+<p>There are two Machine Learning parts in this challenge:</p>
+<ul>
+<li>Supervised ML: predicting the number of starts a user will give based on the content of his review. Results on test (75%/25% split):
+<ul>
+<li>Accuracy: 84%</li>
+<li>Kappa: 0.63</li>
+</ul></li>
+<li>Unsupervised ML. Use of clustering techniques like K-Means and Hierarchical clustering to find different types of groups in the prices of Smartphones. Here I can not show you metrics, as we do not have any target variable, but the results I achieved are very similar to the manual splits I did it. It shows it is a good way to find groups of products based on price.</li>
+</ul>
+<p><br />
+CONCLUSIONS</p>
+<p>Both tasks, sentiment analysis, and clustering have been accomplished successfully. This dataset can help us to create models to implement them in other E-Commerce platforms and optimize their clients’ analysis.</p>
+<p><a href="">Link</a> to the Kaggle analysis.</p>
 
             </section>
             

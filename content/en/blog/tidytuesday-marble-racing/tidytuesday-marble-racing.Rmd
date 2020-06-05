@@ -25,6 +25,8 @@ The following description comes from the [TidyTuesday github](https://github.com
 
 VISUALIZATION
 
+[Code](https://github.com/JoanClaverol/tidytuesday/blob/master/data/2020/2020-06-02/code.R) to Github. 
+
 ```{r fig.height=7}
 # GOAL: Do some marbles race better than others? Who would I put my money on in
 # season 2 of Marbula One? … If any of these questions interest you, read on and
@@ -114,4 +116,3 @@ final_plot <- grid.arrange(
     x = 1
     ))
 ```
-

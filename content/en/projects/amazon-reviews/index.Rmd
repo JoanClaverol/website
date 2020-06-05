@@ -1,6 +1,6 @@
 ---
 title: "Amazon reviews" # Title of your project
-weight: 2 # Order in which to show this project on the home page
+weight: 3 # Order in which to show this project on the home page
 external_link: "" # Optional external link instead of modal
 resources:
     - src: words.jpg
@@ -11,3 +11,45 @@ output:
     fig_width: 8
     dev: "svg"
 ---
+
+OVERVIEW
+
+Is it possible to predict the number of starts a user will give to a product based on the content of his review? Am I able to find different customer behaviours based on different products?
+
+To be able to answer these questions will give me a better perspective of how customer client departments work on E-Commerce companies and do text mining to extract insights from it.
+
+\
+DATASET
+
+I am going to use the data set [Amazone Cell Phone Reviews](https://www.kaggle.com/grikomsn/amazon-cell-phones-reviews) from Kaggle website.
+
+> *[...] this dataset focuses on both unlocked and locked carriers, and scoped on ten brands: ASUS, Apple, Google, HUAWEI, Motorola, Nokia, OnePlus, Samsung, Sony, and Xiaomi.*
+
+\
+TECHNOLOGIES
+
+**R** as a programming language. Libraries used:
+
+* *Data manipulation*: Tidyverse and tm(text mining)
+* *Visualizations*: ggplot2
+* *Machine Learning*: caret
+
+*RStudio* as IDE
+
+\
+RESULTS
+
+There are two Machine Learning parts in this challenge:
+
++ Supervised ML: predicting the number of starts a user will give based on the content of his review. Results on test (75%/25% split):
+    - Accuracy: 84%
+    - Kappa: 0.63
+
++ Unsupervised ML. Use of clustering techniques like K-Means and Hierarchical clustering to find different types of groups in the prices of Smartphones. Here I can not show you metrics, as we do not have any target variable, but the results I achieved are very similar to the manual splits I did it. It shows it is a good way to find groups of products based on price.
+
+\
+CONCLUSIONS
+
+Both tasks, sentiment analysis, and clustering have been accomplished successfully. This dataset can help us to create models to implement them in other E-Commerce platforms and optimize their clients' analysis.
+
+[Link]() to the Kaggle analysis.

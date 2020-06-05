@@ -64,7 +64,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown", "_files$", "_cache$"]
         languageCode     = "en-us"
         contentDir       = "content/en"
         weight           = 0
-        title            = "Introduction"
+        title            = "Joan Claverol - Data Analyst"
         [languages.en.params]
-            description  = "Website Description"   # Max 160 characters show in search results
+            description  = "Website about data projects done by Joan Claverol"   # Max 160 characters show in search results
             # footerText   = ""                      # Text to override default footer text (markdown allowed)

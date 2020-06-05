@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction</title>
+    <title>Joan Claverol - Data Analyst</title>
     <link>/</link>
-    <description>Recent content on Introduction</description>
+    <description>Recent content on Joan Claverol - Data Analyst</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jun 2020 17:34:14 +0200</lastBuildDate>
@@ -51,7 +51,11 @@ Many real-world applications need to know the localization of a user in the worl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/amazon-reviews/</guid>
-      <description></description>
+      <description>OVERVIEW
+Is it possible to predict the number of starts a user will give to a product based on the content of his review? Am I able to find different customer behaviours based on different products?
+To be able to answer these questions will give me a better perspective of how customer client departments work on E-Commerce companies and do text mining to extract insights from it.
+
+DATASET</description>
     </item>
     
     <item>
